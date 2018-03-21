@@ -1,0 +1,61 @@
+{
+  "name": "axios-rollup-library",
+  "title": "axios-rollup-library",
+  "version": "0.0.1",
+  "description": "A RollupJS library that uses Axios",
+  "main": "dist/axios-rollup-library.cjs.min.js",
+  "module": "dist/axios-rollup-library.esm.min.js",
+  "browser": "dist/axios-rollup-library.umd.min.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rollup -c config/prod.js",
+    "build:dev": "cross-env NODE_ENV=development rollup -c config/dev.js -w",
+    "clean": "rimraf dist",
+    "precommit": "pretty-quick --staged",
+    "prettier-all": "./node_modules/.bin/prettier --write \"./src/**/*.{js,jsx}\"",
+    "prepare": "npm run clean && npm run build",
+    "test": "bundlesize"
+  },
+  "keywords": [
+    "rollup",
+    "axios"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinmichaelchen/axios-rollup-library.git"
+  },
+  "homepage": "https://github.com/kevinmichaelchen/axios-rollup-library",
+  "author": "Kevin Chen <kevinmichaelchen@gmail.com> (https://github.com/kevinmichaelchen)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevinmichaelchen/axios-rollup-library/issues"
+  },
+  "peerDependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "bundlesize": "^0.16.0",
+    "cross-env": "^5.1.1",
+    "husky": "^0.14.3",
+    "prettier": "^1.11.1",
+    "pretty-quick": "^1.4.1",
+    "rimraf": "^2.6.2",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.2.0"
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "jsxBracketSameLine": true,
+    "printWidth": 80
+  },
+  "bundlesize": [
+    {
+      "path": "./dist/*.min.js",
+      "maxSize": "4 kB"
+    }
+  ]
+}
