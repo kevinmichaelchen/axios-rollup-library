@@ -1,11 +1,11 @@
 {
-  "name": "axios-rollup-library",
-  "title": "axios-rollup-library",
+  "name": "axios-rollup-saga",
+  "title": "axios-rollup-saga",
   "version": "0.0.3",
   "description": "A RollupJS library that uses Axios",
-  "main": "dist/axios-rollup-library.cjs.min.js",
-  "module": "dist/axios-rollup-library.esm.min.js",
-  "browser": "dist/axios-rollup-library.umd.min.js",
+  "main": "dist/axios-rollup-saga.cjs.min.js",
+  "module": "dist/axios-rollup-saga.esm.min.js",
+  "browser": "dist/axios-rollup-saga.umd.min.js",
   "files": [
     "dist"
   ],
@@ -33,9 +33,12 @@
     "url": "https://github.com/kevinmichaelchen/axios-rollup-library/issues"
   },
   "peerDependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "redux-saga": "^0.16.0"
   },
   "devDependencies": {
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "bundlesize": "^0.16.0",
     "cross-env": "^5.1.1",
     "husky": "^0.14.3",
@@ -44,7 +47,8 @@
     "pretty-quick": "^1.4.1",
     "rimraf": "^2.6.2",
     "rollup-plugin-node-builtins": "^2.1.2",
-    "rollup-plugin-node-globals": "^1.2.0"
+    "rollup-plugin-node-globals": "^1.2.0",
+    "rollup-regenerator-runtime": "^6.23.1"
   },
   "prettier": {
     "bracketSpacing": true,
