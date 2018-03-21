@@ -1,7 +1,7 @@
 {
   "name": "axios-rollup-library",
   "title": "axios-rollup-library",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A RollupJS library that uses Axios",
   "main": "dist/axios-rollup-library.cjs.min.js",
   "module": "dist/axios-rollup-library.esm.min.js",
