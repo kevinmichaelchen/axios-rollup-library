@@ -37,13 +37,19 @@
   },
   "devDependencies": {
     "bundlesize": "^0.16.0",
+    "change-case": "^3.0.2",
     "cross-env": "^5.1.1",
     "husky": "^0.14.3",
+    "lodash": "^4.17.5",
     "prettier": "^1.11.1",
     "pretty-quick": "^1.4.1",
     "rimraf": "^2.6.2",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-json": "^2.3.0",
     "rollup-plugin-node-builtins": "^2.1.2",
-    "rollup-plugin-node-globals": "^1.2.0"
+    "rollup-plugin-node-globals": "^1.2.0",
+    "rollup-plugin-node-resolve": "^3.3.0"
   },
   "prettier": {
     "bracketSpacing": true,
