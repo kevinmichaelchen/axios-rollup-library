@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const get = axios
-  .get('/user?ID=12345')
+export const get = url => axios
+  .get(url)
   .then(response => console.log(response))
   .catch(error => console.log(error));

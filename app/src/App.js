@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { get } from 'axios-rollup-library';
 
 class App extends Component {
   componentDidMount() {
     console.log('componentDidMount')
+    get();
   }
 
   render() {
